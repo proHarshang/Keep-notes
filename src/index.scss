@@ -18,6 +18,7 @@ html::selection {
 body {
   overflow-x: hidden !important;
   width: 100vw;
+  background-color: #f1f1f1;
   &::-webkit-scrollbar {
     width: 1.5vw;
     max-width: 12px;
@@ -31,13 +32,16 @@ body {
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   background-color: $color;
   height: 50px;
   display: flex;
   align-items: center;
-  padding: 5px 40px;
+  padding: 5px 0px;
   font-family: sans-serif;
+  h1 {
+    margin: 0px auto;
+  }
 }
 
 .createNoteContainer {
@@ -52,6 +56,7 @@ nav {
   align-items: flex-start;
   gap: 35px;
   position: relative;
+  background: white;
   input,
   textarea {
     border: none;
@@ -104,6 +109,7 @@ nav {
     position: relative;
     width: 80%;
     max-width: 220px;
+    background: white;
     .note {
       display: flex;
       flex-direction: column;

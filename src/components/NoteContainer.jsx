@@ -1,12 +1,9 @@
 import React from 'react'
-import NoteWrapper from './NoteWrapper'
 
-const NoteContainer = () => {
+const NoteContainer = ({ children }) => {
     return (
         <div className='noteContainer'>
-            <NoteWrapper />
-            <NoteWrapper />
-            <NoteWrapper />
+            {children}
         </div>
     )
 }
